@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ibititec.ldapp.DetalheActivity"
+    tools:showIn="@layout/activity_detalhe"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_fresco_detalhe"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/limaduarte_2"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:failureImage="@drawable/error_img"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@drawable/loading_img"
+            fresco:retryImage="@drawable/retry_img"
+            fresco:roundAsCircle="false"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/maps_icon"
+            android:id="@+id/btn_visualizar_mapa"
+            android:text="Visualizar no Mapa"
+            android:paddingLeft="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/txtNomeComercianteDetalhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="19sp"
+            android:textStyle="italic"
+            android:layout_weight="1.09" />
+        <ImageView
+
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_black_24dp"
+            android:background="@drawable/buttom"
+            android:id="@+id/btn_ligar_detalhe"
+            android:text="Visualizar no Mapa"
+            android:layout_gravity="right"
+         />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEnviarCordeada"
+            android:text="Enviar Cordenada"/>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_layout_detalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+    </LinearLayout>
+
+</LinearLayout>
